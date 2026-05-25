@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-
-car_data = pd.read_csv('/home/telneto/scripts/triplex/triple7_proyect/vehicles_us.csv')
+url='https://raw.githubusercontent.com/telneto/triple7_proyect/refs/heads/main/vehicles_us.csv'
+car_data = pd.read_csv(url)
 
 hist_button = st.button('Construir histograma')
 disp_button= st.button('Construir gráfico de dispersión')
