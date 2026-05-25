@@ -4,6 +4,9 @@ import plotly.graph_objects as go
 url='https://raw.githubusercontent.com/telneto/triple7_proyect/refs/heads/main/vehicles_us.csv'
 car_data = pd.read_csv(url)
 
+st.write('APLICACION PARA MOSTRAR INFORMACIÓN DE VENTAS DE AUTOS')
+st.write('Escoge el gráfico que quieras ver:')
+
 hist_button = st.button('Construir histograma')
 disp_button= st.button('Construir gráfico de dispersión')
 st.write('Escoge aquí el gráfico de tu preferncia')
